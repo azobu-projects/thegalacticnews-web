@@ -31,9 +31,13 @@
 
 ### Installation
 
+Install dependencies using `yarn`:
+
 ```sh
 yarn
 ```
+
+You should also install and run `thegalacticnews-api` before continuing.
 
 ### Run
 
@@ -42,6 +46,18 @@ yarn dev
 ```
 
 Access it on <http://localhost:8000>.
+
+### Lint
+
+```sh
+yarn lint
+```
+
+To fix basic issues:
+
+```sh
+yarn lint --fix
+```
 
 ## Authors
 
