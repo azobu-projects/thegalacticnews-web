@@ -1,25 +1,21 @@
 import React from 'react'
 
-import logo from './logo.svg'
-import './App.css'
-
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
+    <div>
+      <img
+        src='/assets/logos/thegalacticnews-logo.svg'
+        alt='Logo'
+        height={200}
+      />
+      <h1>The Galactic News</h1>
+      <p>Intergalactic news from humans and aliens.</p>
+      <p>This project is still under development</p>
+      <p>
+        <a href='https://github.com/azobu-projects/thegalacticnews'>
+          See the source code here
         </a>
-      </header>
+      </p>
     </div>
   )
 }
