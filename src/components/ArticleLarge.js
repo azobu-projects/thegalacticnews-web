@@ -3,13 +3,13 @@ import styled from '@xstyled/emotion'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
+const LinkStyled = styled(Link)``
+
 const ArticleStyled = styled.article`
   display: flex;
   align-items: flex-end;
-  background-image: ;
   min-height: 425;
   max-width: 710;
-  margin-bottom: 20;
   color: #fff;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
     ${(props) => `url(${props.imageUrl})`};
@@ -42,14 +42,14 @@ const ArticleTitle = styled.h4`
 
 const ArticleLarge = ({ article }) => {
   return (
-    <Link to={`/articles/${article.slug}`}>
+    <LinkStyled to={`/articles/${article.slug}`}>
       <ArticleStyled imageUrl={article.imageUrl}>
         <ArticlePart>
           <ArticleCategory>{article.category}</ArticleCategory>
           <ArticleTitle>{article.title}</ArticleTitle>
         </ArticlePart>
       </ArticleStyled>
-    </Link>
+    </LinkStyled>
   )
 }
 

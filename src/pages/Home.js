@@ -38,6 +38,15 @@ const ColumnAside = styled.div`
 
 const ColumnMain = styled.div``
 
+const ColumnMainGrid = styled.div`
+  margin: 20;
+  display: grid;
+  grid-row-gap: 20;
+  grid-column-gap: 20;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+`
+
 const Home = () => {
   return (
     <Page>
@@ -72,16 +81,18 @@ const Home = () => {
             .map((article, index) => {
               return <ArticleLarge key={index} article={article} />
             })}
-          {articles
-            .filter((article) => {
-              return article.isFeatured && article.mode === 'medium'
-            })
-            .filter((article, index) => {
-              return index < 2
-            })
-            .map((article, index) => {
-              return <ArticleMedium key={index} article={article} />
-            })}
+          <ColumnMainGrid>
+            {articles
+              .filter((article) => {
+                return article.isFeatured && article.mode === 'medium'
+              })
+              .filter((article, index) => {
+                return index < 2
+              })
+              .map((article, index) => {
+                return <ArticleMedium key={index} article={article} />
+              })}
+          </ColumnMainGrid>
         </ColumnMain>
       </Row>
 
