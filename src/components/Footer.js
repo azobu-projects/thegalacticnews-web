@@ -13,10 +13,21 @@ const FooterStyled = styled.footer`
   margin-top: 200;
 `
 
-const SocialList = styled.div``
+const SocialList = styled.div`
+  display: flex;
+  align-items: center;
+`
 
 const SocialLink = styled.a`
   margin: 0 10px;
+`
+
+const SocialImage = styled.img`
+  transition: all 0.2s ease-in-out;
+  filter: grayscale(100%);
+  &:hover {
+    filter: none;
+  }
 `
 
 const Copyright = styled.p`
@@ -30,7 +41,7 @@ const Footer = () => {
         {icons.map((icon, index) => {
           return (
             <SocialLink key={index} href={icon.url} target='_blank'>
-              <img src={icon.imageUrl} alt={icon.title} />
+              <SocialImage src={icon.imageUrl} alt={icon.title} />
             </SocialLink>
           )
         })}
