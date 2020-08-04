@@ -18,6 +18,7 @@ const Heading = styled.h2`
   display: flex;
   align-items: center;
   margin-top: 0;
+  padding-left: 20;
   img {
     margin-right: 10;
   }
@@ -32,9 +33,7 @@ const Row = styled.div`
 const ColumnAside = styled.div`
   display: flex;
   flex-direction: column;
-  & > * {
-    margin-bottom: 20;
-  }
+  margin-right: 20;
 `
 
 const ColumnMain = styled.div``

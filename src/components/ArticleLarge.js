@@ -9,11 +9,17 @@ const ArticleStyled = styled.article`
   background-image: ;
   min-height: 425;
   max-width: 710;
+  margin-bottom: 20;
   color: #fff;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
     ${(props) => `url(${props.imageUrl})`};
   background-position: center;
   background-size: cover;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 12px -12px hsla(0, 0%, 20%, 80%);
+  }
 `
 
 const ArticlePart = styled.div`
