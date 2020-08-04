@@ -28,7 +28,7 @@ const ArticleTitle = styled.h4`
 
 const ArticleSmall = ({ article }) => {
   return (
-    <Link to='/articles/slug'>
+    <Link to={`/articles/${article.slug}`}>
       <ArticleStyled>
         <ArticlePart>
           <img src={article.imageUrl} alt={article.alt} />

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@xstyled/emotion'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 const ArticleStyled = styled.article`
@@ -33,19 +34,21 @@ const ArticleTitle = styled.h4`
   font-weight: normal;
 `
 
-const ArticleMedium = () => {
+const ArticleMedium = ({ article }) => {
   return (
-    <Link to='/articles/slug'>
-      <ArticleStyled imageUrl='/uploads/images/mobile-suit.jpg'>
+    <Link to={`/articles/${article.slug}`}>
+      <ArticleStyled imageUrl={article.imageUrl}>
         <ArticlePart>
-          <ArticleCategory>Tech</ArticleCategory>
-          <ArticleTitle>
-            The best mobile suits ever made since 2110
-          </ArticleTitle>
+          <ArticleCategory>{article.category}</ArticleCategory>
+          <ArticleTitle>{article.title}</ArticleTitle>
         </ArticlePart>
       </ArticleStyled>
     </Link>
   )
+}
+
+ArticleMedium.propTypes = {
+  article: PropTypes.object.isRequired
 }
 
 export default ArticleMedium

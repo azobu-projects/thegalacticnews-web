@@ -52,7 +52,10 @@ const Home = () => {
           </Heading>
           {articles
             .filter((article) => {
-              return article.mode === 'small'
+              return article.isFeatured && article.mode === 'small'
+            })
+            .filter((article, index) => {
+              return index < 5
             })
             .map((article, index) => {
               return <ArticleSmall key={index} article={article} />
@@ -60,9 +63,26 @@ const Home = () => {
         </ColumnAside>
 
         <ColumnMain>
-          <ArticleLarge />
-          <ArticleMedium />
-          <ArticleMedium />
+          {articles
+            .filter((article) => {
+              return article.isFeatured && article.mode === 'large'
+            })
+            .filter((article, index) => {
+              return index < 1
+            })
+            .map((article, index) => {
+              return <ArticleLarge key={index} article={article} />
+            })}
+          {articles
+            .filter((article) => {
+              return article.isFeatured && article.mode === 'medium'
+            })
+            .filter((article, index) => {
+              return index < 2
+            })
+            .map((article, index) => {
+              return <ArticleMedium key={index} article={article} />
+            })}
         </ColumnMain>
       </Row>
 

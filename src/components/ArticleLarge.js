@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@xstyled/emotion'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 const ArticleStyled = styled.article`
@@ -33,19 +34,21 @@ const ArticleTitle = styled.h4`
   font-weight: normal;
 `
 
-const ArticleLarge = () => {
+const ArticleLarge = ({ article }) => {
   return (
-    <Link to='/articles/slug'>
-      <ArticleStyled imageUrl='/uploads/images/millennium-falcon.jpg'>
+    <Link to={`/articles/${article.slug}`}>
+      <ArticleStyled imageUrl={article.imageUrl}>
         <ArticlePart>
-          <ArticleCategory>Mission</ArticleCategory>
-          <ArticleTitle>
-            Millennium Falcon crew finally docks with the ISS
-          </ArticleTitle>
+          <ArticleCategory>{article.category}</ArticleCategory>
+          <ArticleTitle>{article.title}</ArticleTitle>
         </ArticlePart>
       </ArticleStyled>
     </Link>
   )
+}
+
+ArticleLarge.propTypes = {
+  article: PropTypes.object.isRequired
 }
 
 export default ArticleLarge

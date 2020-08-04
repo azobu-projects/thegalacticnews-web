@@ -2,64 +2,64 @@
   {
     "category": "mission",
     "title": "Millennium Falcon crew finally docks with the ISS",
+    "slug": "millennium-falcon",
     "imageUrl": "/uploads/images/millennium-falcon.jpg",
-    "alt": "Millennium Falcon",
     "isFeatured": true,
     "mode": "large"
   },
   {
     "category": "tech",
     "title": "The best mobile suits ever made since 2110",
+    "slug": "best-mobile-suits",
     "imageUrl": "/uploads/images/mobile-suit.jpg",
-    "alt": "",
     "isFeatured": true,
     "mode": "medium"
   },
   {
     "category": "architecture",
     "title": "Rebuilding the new Nova Corps HQ on Xandar",
+    "slug": "rebuilding",
     "imageUrl": "/uploads/images/nova-corps.jpg",
-    "alt": "",
     "isFeatured": true,
     "mode": "medium"
   },
   {
     "category": "tech",
     "title": "New transporter engine has been discovered",
+    "slug": "new-transporter",
     "imageUrl": "/uploads/images/transporter.jpg",
-    "alt": "",
     "isFeatured": true,
     "mode": "small"
   },
   {
     "category": "science",
     "title": "Jet fuel based on vibranium from Wakanda",
+    "slug": "jet-fuel-vibranium",
     "imageUrl": "/uploads/images/vibranium.jpg",
-    "alt": "",
     "isFeatured": true,
     "mode": "small"
   },
   {
     "category": "history",
     "title": "Celebration of the rebirth of planet Namek",
+    "slug": "celebration",
     "imageUrl": "/uploads/images/planet-namek.jpg",
-    "alt": "",
     "isFeatured": true,
     "mode": "small"
   },
   {
     "category": "social",
     "title": "Events regarding the Wookiee mania and community",
+    "slug": "events",
     "imageUrl": "/uploads/images/wookiee.jpg",
-    "alt": "",
     "isFeatured": true,
     "mode": "small"
   },
   {
     "category": "tech",
     "title": "Affordable low-risk terraformation tools ranked",
+    "slug": "affordable",
     "imageUrl": "/uploads/images/terraformation.jpg",
-    "alt": "",
     "isFeatured": true,
     "mode": "small"
   }
