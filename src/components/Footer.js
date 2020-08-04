@@ -10,7 +10,7 @@ const FooterStyled = styled.footer`
   background-color: #000;
   color: #fff;
   padding-top: 100;
-  margin-top: 100;
+  margin-top: 200;
 `
 
 const SocialList = styled.div``

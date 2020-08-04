@@ -1,41 +1,72 @@
 import React from 'react'
+import styled from '@xstyled/emotion'
 
-import { Page, Hero } from '../components'
+import { PageArticle, Hero } from '../components'
+
+const Highlight = styled.p`
+  font-size: 42;
+  margin: 0;
+`
+
+const Row = styled.div`
+  display: flex;
+  margin-bottom: 100;
+`
+
+const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 100;
+`
+
+const Item = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20;
+`
+
+const Number = styled.span`
+  font-size: 72px;
+  font-family: 'Space Mono', monospace;
+`
 
 const About = () => {
   return (
-    <Page>
+    <PageArticle>
       <Hero heading='About Us'></Hero>
 
-      <div>
-        <p>
+      <Row>
+        <Highlight>
           <b>The Galactic News</b> is dedicated to helping humans and aliens
           understand the universe through interconnected information.
-        </p>
-      </div>
+        </Highlight>
+      </Row>
 
-      <div>
-        <div>
-          <span>300</span>
-          <span>species on staff</span>
-        </div>
+      <h4>Our Statistics</h4>
 
-        <div>
-          <span>90</span>
-          <span>languages</span>
-        </div>
-
-        <div>
-          <span>120</span>
-          <span>planets</span>
-        </div>
-
-        <div>
-          <span>4.2m</span>
-          <span>subscribers</span>
-        </div>
-      </div>
-    </Page>
+      <Row>
+        <Column>
+          <Item>
+            <Number>300</Number>
+            <span>species on staff</span>
+          </Item>
+          <Item>
+            <Number>120</Number>
+            <span>planets</span>
+          </Item>
+        </Column>
+        <Column>
+          <Item>
+            <Number>90</Number>
+            <span>languages</span>
+          </Item>
+          <Item>
+            <Number>4.2m</Number>
+            <span>subscribers</span>
+          </Item>
+        </Column>
+      </Row>
+    </PageArticle>
   )
 }
 
