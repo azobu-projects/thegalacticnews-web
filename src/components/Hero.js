@@ -7,6 +7,7 @@ const Heading = styled.h1`
   letter-spacing: 0.1em;
   margin: 100;
   font-size: 48;
+  text-align: center;
 `
 
 const Hero = ({ heading }) => {

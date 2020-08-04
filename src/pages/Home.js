@@ -15,8 +15,6 @@ const Heading = styled.h2`
   letter-spacing: 0.1em;
   display: flex;
   align-items: center;
-  margin: 0;
-  margin-bottom: 20;
   img {
     margin-right: 10;
   }
@@ -28,10 +26,15 @@ const Row = styled.div`
   justify-content: center;
 `
 
-const Column = styled.div`
+const ColumnAside = styled.div`
   display: flex;
   flex-direction: column;
+  & > * {
+    margin-bottom: 20;
+  }
 `
+
+const ColumnMain = styled.div``
 
 const Home = () => {
   return (
@@ -39,7 +42,7 @@ const Home = () => {
       <Hero heading='Latest Updates' />
 
       <Row>
-        <Column>
+        <ColumnAside>
           <Heading>
             <img src='/assets/images/shape-circle.png' alt='Circle' />
             Trending
@@ -49,13 +52,13 @@ const Home = () => {
           <ArticleSmall />
           <ArticleSmall />
           <ArticleSmall />
-        </Column>
+        </ColumnAside>
 
-        <Column>
-          <div>Mission</div>
-          <div>Mission</div>
-          <div>Mission</div>
-        </Column>
+        <ColumnMain>
+          <ArticleLarge />
+          <ArticleMedium />
+          <ArticleMedium />
+        </ColumnMain>
       </Row>
 
       <Row>

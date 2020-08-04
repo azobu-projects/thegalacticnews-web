@@ -10,7 +10,6 @@ const ArticlePart = styled.div`
 `
 
 const ArticleCategory = styled.span`
-  font-family: Poppins;
   font-weight: bold;
   font-size: 12;
   letter-spacing: 0.1em;
@@ -19,7 +18,6 @@ const ArticleCategory = styled.span`
 
 const ArticleTitle = styled.h4`
   margin: 0;
-  font-family: Poppins;
   font-size: 16;
   font-weight: normal;
   max-width: 200;
