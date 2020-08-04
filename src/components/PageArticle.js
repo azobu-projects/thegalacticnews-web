@@ -12,7 +12,7 @@ const PageStyled = styled.div`
 
 const Main = styled.main`
   flex: 1;
-  max-width: 1080;
+  max-width: 720;
   margin: 0 auto;
 `
 
