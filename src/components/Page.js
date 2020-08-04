@@ -13,6 +13,7 @@ const PageStyled = styled.div`
 const Main = styled.main`
   flex: 1;
   max-width: 960px;
+  margin: 0 auto;
 `
 
 const Page = ({ children }) => {

@@ -8,6 +8,7 @@ const HeaderStyled = styled.header`
   justify-content: space-between;
   border-bottom: 2;
   border-color: #ccc;
+  background-color: #fff;
 `
 
 const HeaderSegment = styled.div`
