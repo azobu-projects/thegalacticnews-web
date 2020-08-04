@@ -8,11 +8,12 @@ const HeroArticleStyled = styled.div`
 
 const Title = styled.h1`
   letter-spacing: 0.1em;
-  font-size: 42;
+  font-size: 36;
 `
 
 const Author = styled.h2`
   font-weight: normal;
+  font-size: 18;
 `
 
 const HeroArticle = ({ heading, author }) => {
