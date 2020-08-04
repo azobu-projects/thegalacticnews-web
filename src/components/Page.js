@@ -1,15 +1,32 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import styled from '@xstyled/emotion'
 
 import { HeaderContainer, FooterContainer } from '../containers'
 
+const PageStyled = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+`
+
+const Main = styled.main`
+  flex: 1;
+  max-width: 960px;
+`
+
 const Page = ({ children }) => {
   return (
-    <main>
+    <PageStyled>
       <HeaderContainer />
-      {children}
+      <Main>{children}</Main>
       <FooterContainer />
-    </main>
+    </PageStyled>
   )
+}
+
+Page.propTypes = {
+  children: PropTypes.any.isRequired
 }
 
 export default Page
