@@ -5,7 +5,7 @@ import { Page } from '../components'
 const NotFound = () => {
   return (
     <Page>
-      <p>Paget Not Found</p>
+      <p>Page Not Found</p>
     </Page>
   )
 }

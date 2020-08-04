@@ -15,28 +15,38 @@ const HeaderSegment = styled.div`
   display: flex;
   align-items: center;
   padding: 20;
-  * {
+  a {
+    margin-right: 20px;
+    font-weight: normal;
+  }
+`
+
+const HeaderSegmentButtons = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 20;
+  a {
     margin: 0 5px;
   }
 `
 
-const Logo = styled.img`
-  padding: 0 10;
-`
+const Logo = styled.img``
 
 const Header = () => {
   return (
     <HeaderStyled>
       <HeaderSegment>
-        <LinkButton to='/menu'>Menu</LinkButton>
         <LinkAnchor to='/'>
           <Logo src='/assets/images/logo.svg' alt='The Galactic News' />
         </LinkAnchor>
+        <LinkAnchor to='/about'>About</LinkAnchor>
+        <LinkAnchor to='/articles'>Articles</LinkAnchor>
       </HeaderSegment>
-      <HeaderSegment>
+
+      <HeaderSegmentButtons>
         <LinkButton to='/register'>Register</LinkButton>
         <LinkButton to='/login'>Login</LinkButton>
-      </HeaderSegment>
+      </HeaderSegmentButtons>
     </HeaderStyled>
   )
 }
