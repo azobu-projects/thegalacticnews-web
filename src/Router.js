@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import { Home, About, NotFound } from './pages'
+import { Home, About, Articles, NotFound } from './pages'
 
 const Router = () => {
   return (
@@ -9,6 +9,7 @@ const Router = () => {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
+        <Route path='/articles' component={Articles} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
