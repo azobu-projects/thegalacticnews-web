@@ -10,11 +10,14 @@ import {
   ArticleLarge
 } from '../components'
 
+import articles from '../data/articles.json'
+
 const Heading = styled.h2`
   text-transform: uppercase;
   letter-spacing: 0.1em;
   display: flex;
   align-items: center;
+  margin-top: 0;
   img {
     margin-right: 10;
   }
@@ -47,11 +50,13 @@ const Home = () => {
             <img src='/assets/images/shape-circle.png' alt='Circle' />
             Trending
           </Heading>
-          <ArticleSmall />
-          <ArticleSmall />
-          <ArticleSmall />
-          <ArticleSmall />
-          <ArticleSmall />
+          {articles
+            .filter((article) => {
+              return article.mode === 'small'
+            })
+            .map((article, index) => {
+              return <ArticleSmall key={index} article={article} />
+            })}
         </ColumnAside>
 
         <ColumnMain>
