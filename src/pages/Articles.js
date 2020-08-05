@@ -6,7 +6,9 @@ import { Page, Hero } from '../components'
 
 import articles from '../data/articles.json'
 
-const ArticleCards = styled.div``
+const ArticleCards = styled.div`
+  width: 720;
+`
 
 const LinkStyled = styled(Link)`
   display: block;

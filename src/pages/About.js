@@ -26,7 +26,7 @@ const Item = styled.div`
 `
 
 const Number = styled.span`
-  font-size: 72px;
+  font-size: 72;
   font-family: 'Space Mono', monospace;
 `
 

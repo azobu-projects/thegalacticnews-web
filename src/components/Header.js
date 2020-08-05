@@ -17,7 +17,6 @@ const HeaderSegment = styled.div`
   padding: 20;
   a {
     margin-right: 20px;
-    font-weight: normal;
   }
 `
 
