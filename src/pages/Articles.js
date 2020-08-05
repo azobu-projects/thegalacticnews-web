@@ -13,11 +13,10 @@ const ArticleCards = styled.div`
 const LinkStyled = styled(Link)`
   display: block;
   border: 2;
+  border-color: border;
   margin-bottom: 20;
   padding: 20;
-  &:nth-of-type(even) {
-    border-color: #aaa;
-  }
+  color: text;
 `
 
 const ArticleCard = styled.div``

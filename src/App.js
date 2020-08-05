@@ -9,19 +9,20 @@ import Router from './Router'
 const theme = {
   colors: {
     primary: '#5eafdf',
-    text: '#000',
-    textAlt: '#333',
+    secondary: '#297aa3',
+    text: '#222',
+    textAlt: '#555',
     background: '#fff',
     backgroundAlt: '#eee',
-    border: '#ccc',
+    border: '#222',
     modes: {
       dark: {
         primary: '#5eafdf',
-        text: '#fff',
-        textAlt: '#ccc',
-        background: '#111',
-        backgroundAlt: '#000',
-        border: '#222'
+        text: '#ddd',
+        textAlt: '#aaa',
+        background: '#000',
+        backgroundAlt: '#111',
+        border: '#ddd'
       }
     }
   }
