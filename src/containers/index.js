@@ -4,6 +4,7 @@ import ScrollToTop from './ScrollToTop'
 import GlobalStyle from './GlobalStyle'
 import ColorModeToggle from './ColorModeToggle'
 import RegisterFormContainer from './RegisterFormContainer'
+import LoginFormContainer from './LoginFormContainer'
 
 export {
   HeaderContainer,
@@ -11,5 +12,6 @@ export {
   ScrollToTop,
   GlobalStyle,
   ColorModeToggle,
-  RegisterFormContainer
+  RegisterFormContainer,
+  LoginFormContainer
 }

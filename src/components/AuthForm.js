@@ -2,7 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@xstyled/emotion'
 
-const Form = styled.form``
+const Form = styled.form`
+  max-width: 480;
+  margin: 0 auto;
+`
 
 const Field = styled.div`
   display: flex;
