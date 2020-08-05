@@ -6,25 +6,39 @@ import { Page, Hero } from '../components'
 
 import articles from '../data/articles.json'
 
-const ArticleCard = styled.div`
-  padding: 20;
+const ArticleCards = styled.div``
+
+const LinkStyled = styled(Link)`
+  display: block;
   border: 2;
   margin-bottom: 20;
+  padding: 20;
+  &:nth-of-type(even) {
+    border-color: #aaa;
+  }
+`
+
+const ArticleCard = styled.div``
+
+const ArticleTitle = styled.h3`
+  margin: 0;
 `
 
 const Articles = () => {
   return (
     <Page>
       <Hero heading='Articles'></Hero>
-      {articles.map((article, index) => {
-        return (
-          <Link key={index} to={`/articles/${article.slug}`}>
-            <ArticleCard>
-              <h3>{article.title}</h3>
-            </ArticleCard>
-          </Link>
-        )
-      })}
+      <ArticleCards>
+        {articles.map((article, index) => {
+          return (
+            <LinkStyled key={index} to={`/articles/${article.slug}`}>
+              <ArticleCard>
+                <ArticleTitle>{article.title}</ArticleTitle>
+              </ArticleCard>
+            </LinkStyled>
+          )
+        })}
+      </ArticleCards>
     </Page>
   )
 }

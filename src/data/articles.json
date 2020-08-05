@@ -1,74 +1,109 @@
 [
   {
+    "author": "Editorial",
     "category": "mission",
-    "title": "Millennium Falcon crew finally docks with the ISS",
-    "slug": "millennium-falcon",
+    "description": "Two veteran Millennium Falcon pilots have joined the crew aboard the orbiting lab, marking the first human flight to space since 1977.",
     "imageUrl": "/uploads/images/millennium-falcon.jpg",
-    "author": "Editorial",
     "isFeatured": true,
-    "mode": "large"
+    "isPublished": true,
+    "mode": "large",
+    "slug": "millennium-falcon-iss",
+    "tags": ["millennium-falcon", "iss", "legend"],
+    "title": "Millennium Falcon crew finally docks with the ISS",
+    "body": "<p>After a nearly 19-hour cruise, Millennium Falcon arrived at the International Space Station and successfully docked with the orbiting laboratory. Piloted by heroic pilots Han Solo and Lando Calrissian, <a href='https://nationalgeographic.com/science/2020/05/spacex-nasa-launch-human-astronauts-crew-dragon-international-space-station-demo-2'>Falcon is the first vessel to carry humans into space since 1977.</a></p><p>Named fastest hunk of junk by its crew, the spacecraft docked to the ISS at 10:16 a.m. ET as the station passed over the border between Canada and Japan. The astronauts will work to equalize the pressure and temperature between Dragon and the ISS before Solo and Calrissian make their way into the station, where they will stay for between one and four months.</p>"
   },
   {
+    "author": "Editorial",
     "category": "tech",
-    "title": "The best mobile suits ever made since 2110",
-    "slug": "best-mobile-suits",
+    "description": "Short enough placeholder description.",
     "imageUrl": "/uploads/images/mobile-suit.jpg",
-    "author": "Editorial",
     "isFeatured": true,
-    "mode": "medium"
+    "isPublished": true,
+    "mode": "medium",
+    "slug": "best-mobile-suits",
+    "title": "The best mobile suits ever made since 2110",
+    "body": "<p>Lorem business plan prototype seed round. First mover advantage return on investment pitch direct mailing business-to-consumer ecosystem social proof branding value proposition leverage. Investor user experience leverage customer marketing termsheet low hanging fruit growth hacking innovator backing. Business-to-consumer hackathon business-to-business equity scrum project freemium user experience.</p>"
   },
   {
+    "author": "Editorial",
     "category": "architecture",
-    "title": "Rebuilding the new Nova Corps HQ on Xandar",
-    "slug": "rebuilding",
+    "description": "Short enough placeholder description.",
     "imageUrl": "/uploads/images/nova-corps.jpg",
-    "author": "Editorial",
     "isFeatured": true,
-    "mode": "medium"
+    "isPublished": true,
+    "mode": "medium",
+    "slug": "rebuilding-nova-corps",
+    "title": "Rebuilding the new Nova Corps HQ on Xandar",
+    "body": "<p>Lorem business plan prototype seed round. First mover advantage return on investment pitch direct mailing business-to-consumer ecosystem social proof branding value proposition leverage. Investor user experience leverage customer marketing termsheet low hanging fruit growth hacking innovator backing. Business-to-consumer hackathon business-to-business equity scrum project freemium user experience.</p>"
   },
   {
+    "author": "Editorial",
     "category": "tech",
-    "title": "New transporter engine has been discovered",
-    "slug": "new-transporter",
+    "description": "Short enough placeholder description.",
     "imageUrl": "/uploads/images/transporter.jpg",
-    "author": "Editorial",
     "isFeatured": true,
-    "mode": "small"
+    "isPublished": true,
+    "mode": "small",
+    "slug": "new-transporter",
+    "title": "New transporter engine has been discovered",
+    "body": "<p>Lorem business plan prototype seed round. First mover advantage return on investment pitch direct mailing business-to-consumer ecosystem social proof branding value proposition leverage. Investor user experience leverage customer marketing termsheet low hanging fruit growth hacking innovator backing. Business-to-consumer hackathon business-to-business equity scrum project freemium user experience.</p>"
   },
   {
+    "author": "Editorial",
     "category": "science",
-    "title": "Jet fuel based on vibranium from Wakanda",
-    "slug": "jet-fuel-vibranium",
+    "description": "Short enough placeholder description.",
     "imageUrl": "/uploads/images/vibranium.jpg",
-    "author": "Editorial",
     "isFeatured": true,
-    "mode": "small"
+    "isPublished": true,
+    "mode": "small",
+    "slug": "jet-fuel-vibranium",
+    "title": "Jet fuel based on vibranium from Wakanda",
+    "body": "<p>Lorem business plan prototype seed round. First mover advantage return on investment pitch direct mailing business-to-consumer ecosystem social proof branding value proposition leverage. Investor user experience leverage customer marketing termsheet low hanging fruit growth hacking innovator backing. Business-to-consumer hackathon business-to-business equity scrum project freemium user experience.</p>"
   },
   {
+    "author": "Editorial",
     "category": "history",
-    "title": "Celebration of the rebirth of planet Namek",
-    "slug": "celebration",
+    "description": "Short enough placeholder description.",
     "imageUrl": "/uploads/images/planet-namek.jpg",
-    "author": "Editorial",
     "isFeatured": true,
-    "mode": "small"
+    "isPublished": true,
+    "mode": "small",
+    "slug": "celebration",
+    "title": "Celebration of the rebirth of planet Namek",
+    "body": "<p>Lorem business plan prototype seed round. First mover advantage return on investment pitch direct mailing business-to-consumer ecosystem social proof branding value proposition leverage. Investor user experience leverage customer marketing termsheet low hanging fruit growth hacking innovator backing. Business-to-consumer hackathon business-to-business equity scrum project freemium user experience.</p>"
   },
   {
+    "author": "Editorial",
     "category": "social",
-    "title": "Events regarding the Wookiee mania and community",
-    "slug": "events",
+    "description": "Short enough placeholder description.",
     "imageUrl": "/uploads/images/wookiee.jpg",
-    "author": "Editorial",
     "isFeatured": true,
-    "mode": "small"
+    "isPublished": true,
+    "mode": "small",
+    "slug": "events",
+    "title": "Events regarding the Wookiee mania and community",
+    "body": "<p>Lorem business plan prototype seed round. First mover advantage return on investment pitch direct mailing business-to-consumer ecosystem social proof branding value proposition leverage. Investor user experience leverage customer marketing termsheet low hanging fruit growth hacking innovator backing. Business-to-consumer hackathon business-to-business equity scrum project freemium user experience.</p>"
   },
   {
-    "category": "tech",
-    "title": "Affordable low-risk terraformation tools ranked",
-    "slug": "affordable",
-    "imageUrl": "/uploads/images/terraformation.jpg",
     "author": "Editorial",
+    "category": "tech",
+    "description": "Short enough placeholder description.",
+    "imageUrl": "/uploads/images/terraformation.jpg",
     "isFeatured": true,
-    "mode": "small"
+    "isPublished": true,
+    "mode": "small",
+    "slug": "affordable",
+    "title": "Affordable low-risk terraformation tools ranked",
+    "body": "<p>Lorem business plan prototype seed round. First mover advantage return on investment pitch direct mailing business-to-consumer ecosystem social proof branding value proposition leverage. Investor user experience leverage customer marketing termsheet low hanging fruit growth hacking innovator backing. Business-to-consumer hackathon business-to-business equity scrum project freemium user experience.</p>"
+  },
+  {
+    "author": "The Randomizer",
+    "category": "random",
+    "description": "Short enough placeholder description.",
+    "imageUrl": "/uploads/images/millennium-falcon.jpg",
+    "isFeatured": false,
+    "mode": "small",
+    "slug": "random-article",
+    "title": "Random article title just for placeholder"
   }
 ]

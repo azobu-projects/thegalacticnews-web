@@ -17,12 +17,16 @@ const Article = () => {
     return article.slug === slug
   })
 
-  return (
-    <PageArticle>
-      <HeroArticle heading={article.title} author={article.author} />
-      <Image src={article.imageUrl} alt={article.title} />
-    </PageArticle>
-  )
+  if (article) {
+    return (
+      <PageArticle>
+        <HeroArticle heading={article.title} author={article.author} />
+        <Image src={article.imageUrl} alt={article.title} />
+      </PageArticle>
+    )
+  } else {
+    return <PageArticle>Article Not Found</PageArticle>
+  }
 }
 
 Article.propTypes = {
