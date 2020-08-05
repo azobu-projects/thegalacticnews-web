@@ -9,6 +9,7 @@ import HeroArticle from './HeroArticle'
 import LinkAnchor from './LinkAnchor'
 import LinkButton from './LinkButton'
 import Toggle from './Toggle'
+import AuthForm from './AuthForm'
 
 export {
   ArticleSmall,
@@ -21,5 +22,6 @@ export {
   HeroArticle,
   LinkAnchor,
   LinkButton,
-  Toggle
+  Toggle,
+  AuthForm
 }
