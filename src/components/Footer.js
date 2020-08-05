@@ -46,7 +46,7 @@ const Footer = () => {
           )
         })}
       </SocialList>
-      <Copyright>Copyright © 1970-2020 The Galactic News Int.</Copyright>
+      <Copyright>Copyright © 1990-2250 The Galactic News Int.</Copyright>
     </FooterStyled>
   )
 }
