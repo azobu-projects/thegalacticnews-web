@@ -12,17 +12,28 @@ const ArticleCards = styled.div`
 
 const LinkStyled = styled(Link)`
   display: block;
-  border: 2;
-  border-color: border;
-  margin-bottom: 20;
-  padding: 20;
   color: text;
+  padding: 20;
+  &:hover {
+    background-color: background;
+    box-shadow: 0 8px 6px -6px hsla(0, 0%, 20%, 20%);
+  }
 `
 
-const ArticleCard = styled.div``
+const ArticleCard = styled.div`
+  display: flex;
+  align-items: center;
+`
 
-const ArticleTitle = styled.h3`
+const Title = styled.h3`
+  padding: 0 20;
   margin: 0;
+`
+
+const Image = styled.img`
+  height: 100;
+  width: 100;
+  object-fit: cover;
 `
 
 const Articles = () => {
@@ -34,7 +45,8 @@ const Articles = () => {
           return (
             <LinkStyled key={index} to={`/articles/${article.slug}`}>
               <ArticleCard>
-                <ArticleTitle>{article.title}</ArticleTitle>
+                <Image src={article.imageUrl} />
+                <Title>{article.title}</Title>
               </ArticleCard>
             </LinkStyled>
           )
