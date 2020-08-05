@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { useColorMode } from '@xstyled/emotion'
+import { useColorMode } from '@xstyled/emotion'
 
 import { Toggle } from '../components'
 

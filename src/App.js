@@ -14,7 +14,7 @@ const theme = {
     textAlt: '#555',
     background: '#fff',
     backgroundAlt: '#eee',
-    border: '#222',
+    border: '#ccc',
     modes: {
       dark: {
         primary: '#5eafdf',
@@ -22,7 +22,7 @@ const theme = {
         textAlt: '#aaa',
         background: '#000',
         backgroundAlt: '#111',
-        border: '#ddd'
+        border: '#333'
       }
     }
   }

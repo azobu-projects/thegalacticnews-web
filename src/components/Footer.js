@@ -7,8 +7,8 @@ const FooterStyled = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000;
-  color: #fff;
+  background-color: background;
+  color: text;
   padding-top: 100;
   margin-top: 200;
 `
@@ -23,6 +23,8 @@ const SocialLink = styled.a`
 `
 
 const SocialImage = styled.img`
+  height: 30;
+  width: 30;
   transition: all 0.2s ease-in-out;
   filter: grayscale(100%);
   &:hover {
