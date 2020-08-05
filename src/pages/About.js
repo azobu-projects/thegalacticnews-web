@@ -42,7 +42,7 @@ const About = () => {
 
   return (
     <Page mode='article'>
-      <Hero heading='About Us'></Hero>
+      <Hero heading='About Us' />
 
       <Row>
         <Highlight>
