@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from '@xstyled/emotion'
+import styled, { useColorMode } from '@xstyled/emotion'
 
 import { Page, Hero } from '../components'
 
@@ -30,7 +30,16 @@ const Number = styled.span`
   font-family: 'Space Mono', monospace;
 `
 
+const Logo = styled.img``
+
+const logo = {
+  light: '/assets/images/logo-light.svg',
+  dark: '/assets/images/logo-dark.svg'
+}
+
 const About = () => {
+  const [mode] = useColorMode(false)
+
   return (
     <Page mode='article'>
       <Hero heading='About Us'></Hero>
@@ -42,9 +51,10 @@ const About = () => {
         </Highlight>
       </Row>
 
-      <h4>Our Statistics</h4>
-
       <Row>
+        <Column>
+          <h4>Our Statistics</h4>
+        </Column>
         <Column>
           <Item>
             <Number>300</Number>
@@ -65,6 +75,13 @@ const About = () => {
             <span>subscribers</span>
           </Item>
         </Column>
+      </Row>
+
+      <Row>
+        <Logo
+          src={mode === 'dark' ? logo['dark'] : logo['light']}
+          alt='The Galactic News'
+        />
       </Row>
     </Page>
   )
