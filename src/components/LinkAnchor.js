@@ -10,9 +10,9 @@ const LinkAnchorStyled = styled(Link)`
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18;
-  color: #000;
+  color: text;
   &:hover {
-    color: #555;
+    color: textAlt;
   }
   img {
     margin-right: 10;

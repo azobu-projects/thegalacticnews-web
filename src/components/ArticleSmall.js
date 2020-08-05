@@ -7,8 +7,9 @@ const ArticleStyled = styled.article`
   display: flex;
   padding: 20;
   transition: all 0.2s ease-in-out;
+  color: text;
   &:hover {
-    background: #fff;
+    background-color: background;
     box-shadow: 0 8px 6px -6px hsla(0, 0%, 20%, 20%);
   }
 `

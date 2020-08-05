@@ -19,6 +19,7 @@ const Heading = styled.h2`
   align-items: center;
   margin-top: 0;
   padding-left: 20;
+  color: text;
   img {
     margin-right: 10;
   }
@@ -55,7 +56,7 @@ const Home = () => {
       <Row>
         <ColumnAside>
           <Heading>
-            <img src='/assets/images/shape-circle.png' alt='Circle' />
+            <img src='/assets/images/shape-circle.svg' alt='Circle' />
             Trending
           </Heading>
           {articles
@@ -98,7 +99,7 @@ const Home = () => {
 
       <Row>
         <LinkAnchor to='/articles'>
-          <img src='/assets/images/shape-triangle.png' alt='Triangle' />
+          <img src='/assets/images/shape-triangle.svg' alt='Triangle' />
           More Articles
         </LinkAnchor>
       </Row>

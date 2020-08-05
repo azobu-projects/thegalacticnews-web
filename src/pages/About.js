@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@xstyled/emotion'
 
-import { PageArticle, Hero } from '../components'
+import { Page, Hero } from '../components'
 
 const Highlight = styled.p`
   font-size: 42;
@@ -32,7 +32,7 @@ const Number = styled.span`
 
 const About = () => {
   return (
-    <PageArticle>
+    <Page mode='article'>
       <Hero heading='About Us'></Hero>
 
       <Row>
@@ -66,7 +66,7 @@ const About = () => {
           </Item>
         </Column>
       </Row>
-    </PageArticle>
+    </Page>
   )
 }
 

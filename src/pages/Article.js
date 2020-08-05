@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { useParams } from 'react-router-dom'
 import ReactHtmlParser from 'react-html-parser'
 
-import { PageArticle, HeroArticle } from '../components'
+import { Page, HeroArticle } from '../components'
 
 import articles from '../data/articles.json'
 
@@ -26,14 +26,14 @@ const Article = () => {
 
   if (article) {
     return (
-      <PageArticle>
+      <Page mode='article'>
         <HeroArticle heading={article.title} author={article.author} />
         <Image src={article.imageUrl} alt={article.title} />
         <Body>{ReactHtmlParser(article.body)}</Body>
-      </PageArticle>
+      </Page>
     )
   } else {
-    return <PageArticle>Article Not Found</PageArticle>
+    return <Page>Article Not Found</Page>
   }
 }
 

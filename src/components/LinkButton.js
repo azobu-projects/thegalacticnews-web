@@ -4,7 +4,7 @@ import styled from '@xstyled/emotion'
 import { Link } from 'react-router-dom'
 
 const LinkButtonStyled = styled(Link)`
-  background-color: #5eafdf;
+  background-color: primary;
   color: #fff;
   padding: 10 20;
   border-radius: 100;

@@ -8,6 +8,7 @@ const Heading = styled.h1`
   margin: 100;
   font-size: 48;
   text-align: center;
+  color: text;
 `
 
 const Hero = ({ heading }) => {
