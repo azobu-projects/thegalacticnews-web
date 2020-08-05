@@ -19,7 +19,14 @@ const ArticlePart = styled.div`
   flex-direction: column;
 `
 
-const ArticleCategory = styled.span`
+const Image = styled.img`
+  width: 100;
+  height: 100;
+  object-fit: cover;
+  object-position: 50% 50%;
+`
+
+const Category = styled.span`
   font-weight: bold;
   font-size: 12;
   letter-spacing: 0.1em;
@@ -27,7 +34,7 @@ const ArticleCategory = styled.span`
   vertical-align: text-top;
 `
 
-const ArticleTitle = styled.h4`
+const Title = styled.h4`
   margin: 0;
   font-size: 16;
   font-weight: normal;
@@ -39,11 +46,11 @@ const ArticleSmall = ({ article }) => {
     <Link to={`/articles/${article.slug}`}>
       <ArticleStyled>
         <ArticlePart>
-          <img src={article.imageUrl} alt={article.alt} />
+          <Image src={article.imageUrl} alt={article.alt} />
         </ArticlePart>
         <ArticlePart>
-          <ArticleCategory>{article.category}</ArticleCategory>
-          <ArticleTitle>{article.title}</ArticleTitle>
+          <Category>{article.category}</Category>
+          <Title>{article.title}</Title>
         </ArticlePart>
       </ArticleStyled>
     </Link>
